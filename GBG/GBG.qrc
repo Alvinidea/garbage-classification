@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/QtGuiApplication1">
+        <file>Resources/images/new.png</file>
+        <file>Resources/images/save.png</file>
+        <file>Resources/images/open.png</file>
+    </qresource>
+</RCC>

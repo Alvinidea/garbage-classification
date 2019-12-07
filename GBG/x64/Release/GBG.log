@@ -1,0 +1,15 @@
+﻿  uic GBG.ui
+  rcc GBG.qrc
+  moc GBG.h
+  GarbagePredict.cpp
+  GBG.cpp
+  main.cpp
+  qrc_GBG.cpp
+  moc_GBG.cpp
+GarbagePredict.obj : error LNK2019: 无法解析的外部符号 "class cv::_InputOutputArray const & __cdecl cv::noArray(void)" (?noArray@cv@@YAAEBV_InputOutputArray@1@XZ)，该符号在函数 "public: virtual class cv::Mat __cdecl Garbage_Predict::getMat(void)" (?getMat@Garbage_Predict@@UEAA?AVMat@cv@@XZ) 中被引用
+GarbagePredict.obj : error LNK2019: 无法解析的外部符号 "void __cdecl cv::minMaxLoc(class cv::_InputArray const &,double *,double *,class cv::Point_<int> *,class cv::Point_<int> *,class cv::_InputArray const &)" (?minMaxLoc@cv@@YAXAEBV_InputArray@1@PEAN1PEAV?$Point_@H@1@20@Z)，该符号在函数 "public: virtual class cv::Mat __cdecl Garbage_Predict::getMat(void)" (?getMat@Garbage_Predict@@UEAA?AVMat@cv@@XZ) 中被引用
+GarbagePredict.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl cv::dnn::dnn4_v20190621::Net::setInput(class cv::_InputArray const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,double,class cv::Scalar_<double> const &)" (?setInput@Net@dnn4_v20190621@dnn@cv@@QEAAXAEBV_InputArray@4@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@NAEBV?$Scalar_@N@4@@Z)，该符号在函数 "public: virtual void __cdecl Garbage_Predict::predict(void)" (?predict@Garbage_Predict@@UEAAXXZ) 中被引用
+GarbagePredict.obj : error LNK2019: 无法解析的外部符号 "class cv::Mat __cdecl cv::dnn::dnn4_v20190621::blobFromImage(class cv::_InputArray const &,double,class cv::Size_<int> const &,class cv::Scalar_<double> const &,bool,bool,int)" (?blobFromImage@dnn4_v20190621@dnn@cv@@YA?AVMat@3@AEBV_InputArray@3@NAEBV?$Size_@H@3@AEBV?$Scalar_@N@3@_N3H@Z)，该符号在函数 "public: virtual void __cdecl Garbage_Predict::preOp(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class cv::Mat,unsigned __int64,unsigned __int64)" (?preOp@Garbage_Predict@@UEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VMat@cv@@_K2@Z) 中被引用
+GarbagePredict.obj : error LNK2019: 无法解析的外部符号 "void __cdecl cv::putText(class cv::_InputOutputArray const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cv::Point_<int>,int,double,class cv::Scalar_<double>,int,int,bool)" (?putText@cv@@YAXAEBV_InputOutputArray@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$Point_@H@1@HNV?$Scalar_@N@1@HH_N@Z)，该符号在函数 "public: virtual class cv::Mat __cdecl Garbage_Predict::getMat(void)" (?getMat@Garbage_Predict@@UEAA?AVMat@cv@@XZ) 中被引用
+GBG.obj : error LNK2019: 无法解析的外部符号 "void __cdecl cv::cvtColor(class cv::_InputArray const &,class cv::_OutputArray const &,int,int)" (?cvtColor@cv@@YAXAEBV_InputArray@1@AEBV_OutputArray@1@HH@Z)，该符号在函数 "private: class cv::Mat __cdecl GBG::QImage2cvMat(class QImage &)" (?QImage2cvMat@GBG@@AEAA?AVMat@cv@@AEAVQImage@@@Z) 中被引用
+E:\QT\GBG\x64\Release\\GBG.exe : fatal error LNK1120: 6 个无法解析的外部命令
